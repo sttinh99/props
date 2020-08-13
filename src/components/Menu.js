@@ -6,8 +6,8 @@ class Menu extends Component{
     {
         return(
             <a href className="block" >
-                <i className={this.props.icon}></i>
-                <p>{this.props.title}</p>
+                <i className={this.props.items[0].icon}></i>
+                <p>{this.props.items[0].title}</p>
             </a>
         );
     }
