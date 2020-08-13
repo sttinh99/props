@@ -6,11 +6,21 @@ function App() {
   return (
     <div className="App">
       <div className="Menu">
-          <Menu icon="fas fa-home" title="HOME"/>
-          <Menu icon="fas fa-gift" title="DEALS"/>
-          <Menu icon="fas fa-cloud-upload-alt" title="UPLOAD"/>
-          <Menu icon="fas fa-coffee" title="WORK"/>
-          <Menu icon="fas fa-cog" title="SETTING"/>
+          <Menu items={[
+            {icon:"fas fa-home" ,title:"HOME"}
+          ]}/>
+          <Menu items={[
+            {icon:"fas fa-gift" ,title:"DEALS"}
+          ]}/>
+          <Menu items={[
+            {icon:"fas fa-cloud-upload-alt" ,title:"UPLOAD"}
+          ]}/>
+          <Menu items={[
+            {icon:"fas fa-coffee", title:"WORK"}
+          ]}/>
+          <Menu items={[
+            {icon:"fas fa-cog" ,title:"SETTING"}
+          ]}/>
       </div>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
