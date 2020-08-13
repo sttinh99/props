@@ -1,0 +1,17 @@
+.block{
+    align-items: center;
+    background-color: #d1c8db;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    position: relative;
+}
+.block p,i{
+    position: absolute;
+}
+a.block:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
