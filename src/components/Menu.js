@@ -3,19 +3,13 @@ import './menu.css'
 
 class Menu extends Component{
     render()
-    {   
-        const items = this.props.items;
-        const lists = items.map(x=>{
-            console.log(x);
-            return  (
+    {    
+        return(
+        <a href className='block'>{this.props.items.map(x=>
                 <div className="block-item">
                     <li className={x.icon}></li>
                     <p>{x.title}</p>
-                </div>
-            )
-        })
-        return(
-        <a href className='block'>{lists}</a>
+                </div>)}</a>
         );
     }
 }
