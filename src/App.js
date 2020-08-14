@@ -7,18 +7,10 @@ function App() {
     <div className="App">
       <div className="Menu">
           <Menu items={[
-            {icon:"fas fa-home" ,title:"HOME"}
-          ]}/>
-          <Menu items={[
-            {icon:"fas fa-gift" ,title:"DEALS"}
-          ]}/>
-          <Menu items={[
-            {icon:"fas fa-cloud-upload-alt" ,title:"UPLOAD"}
-          ]}/>
-          <Menu items={[
-            {icon:"fas fa-coffee", title:"WORK"}
-          ]}/>
-          <Menu items={[
+            {icon:"fas fa-home" ,title:"HOME"},
+            {icon:"fas fa-gift" ,title:"DEALS"},
+            {icon:"fas fa-cloud-upload-alt" ,title:"UPLOAD"},
+            {icon:"fas fa-coffee", title:"WORK"},
             {icon:"fas fa-cog" ,title:"SETTING"}
           ]}/>
       </div>

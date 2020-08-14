@@ -4,9 +4,6 @@
 }
 .App .Menu{
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-
 }
 /*
 .App-logo {
