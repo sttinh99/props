@@ -1,9 +1,8 @@
 .App {
   width: 500px;
   margin: auto;
-}
-.App .Menu{
-  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 /*
 .App-logo {
