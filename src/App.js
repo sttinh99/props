@@ -14,10 +14,10 @@ class App extends Component {
       {icon:"fas fa-cog" ,title:"SETTING"}
     ];
     this.listUser = [
-      {firstName: "Trương", lastName: "Tịnh"},
-      {firstName: "Phạm", lastName: "Bảo"},
-      {firstName: "Vy", lastName: "Hòa"},
-      {firstName: "Ngô", lastName: "Hải"}
+      {firstName: "Trương", lastName: "Tịnh", hadle: 'T'},
+      {firstName: "Phạm", lastName: "Bảo", hadle: 'T'},
+      {firstName: "Vy", lastName: "Hòa", hadle: 'T'},
+      {firstName: "Ngô", lastName: "Hải", hadle: 'T'}
     ]
   }
   render(){
@@ -26,12 +26,14 @@ class App extends Component {
         {
           // this.items.map((x,i)=> <Menu icon={x.icon} key={i} title={x.title}  />)
           <table className='table'>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
             <User listUser={this.listUser}  />
           </table>
         }

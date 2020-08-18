@@ -3,12 +3,17 @@ class User extends Component{
     render(){
         const listUser = this.props.listUser;
         return(
-            <tr>
+            <tbody>
                 {
-                    listUser.map((x)=>
-                       <td>{x.firstName}</td>)
-                }
-            </tr>
+                    listUser.map((x, index)=>
+                        <tr key={index}>
+                            <td>{index}</td>
+                            <td>{x.firstName}</td>
+                            <td>{x.lastName}</td>
+                            <td>{x.hadle}</td>
+                        </tr>
+                    )}
+            </tbody>
         )
     }
 }
