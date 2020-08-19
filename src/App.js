@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
 // import Menu from './components/Menu'
+import Bell from './components/Bell'
 import User from './components/User'
 
 class App extends Component {
@@ -18,14 +19,15 @@ class App extends Component {
       {firstName: "Phạm", lastName: "Bảo", hadle: 'T'},
       {firstName: "Vy", lastName: "Hòa", hadle: 'T'},
       {firstName: "Ngô", lastName: "Hải", hadle: 'T'}
-    ]
+    ];
+    this.nofication = true
   }
   render(){
     return (
       <div className="App">
+        {<Bell hasUnread={this.nofication}/>}
         {
           // this.items.map((x,i)=> <Menu icon={x.icon} key={i} title={x.title}  />)
-
           <table className='table'>
             <thead>
               <tr>
