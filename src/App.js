@@ -25,7 +25,18 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        {<Bell hasUnread={this.nofication}/>}
+        {this.nofication && 
+          <div className="bell">
+            <div className = 'nofication on'></div>
+            <Bell hasUnread={this.nofication}/>
+          </div>
+        }
+        {!this.nofication&&
+          <div className="bell">
+            <div className = 'nofication off'></div>
+            <Bell hasUnread={this.nofication}/>
+          </div>
+        }
         {
           // this.items.map((x,i)=> <Menu icon={x.icon} key={i} title={x.title}  />)
           <table className='table'>
