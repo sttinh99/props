@@ -25,6 +25,7 @@ class App extends Component {
       <div className="App">
         {
           // this.items.map((x,i)=> <Menu icon={x.icon} key={i} title={x.title}  />)
+
           <table className='table'>
             <thead>
               <tr>
@@ -34,7 +35,9 @@ class App extends Component {
                 <th scope="col">Handle</th>
               </tr>
             </thead>
-            <User listUser={this.listUser}  />
+            <tbody>
+              {this.listUser.map((x,i)=> <User firstName={x.firstName} hadle={x.hadle} key={i} th={i+1} lastName={x.lastName}/>)}
+            </tbody>
           </table>
         }
       </div>
